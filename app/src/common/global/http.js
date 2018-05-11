@@ -156,10 +156,10 @@ export const post = (url,body,config) => {
 }
 // 获取文本数据
 export const getTxt = (url) => {
-	//let api = 'http://10.1.30.73/src/';
-	//let api = 'http://10.1.22.15/reactjs/src/';
-	//let api = 'http://localhost:8020/my-template/reactjs/src/';	// 本地访问
-	let api= 'https://jiazhenger.github.io/react/app/src/';	// github访问
+	//const api = 'http://10.1.30.73/src/';
+	//const api = 'http://10.1.22.15/reactjs/src/';
+	//const api = 'http://localhost:8020/my-template/reactjs/src/';	// 本地访问
+	const api= 'https://jiazhenger.github.io/react/app/src/';	// github访问
 	return new Promise((resolve, reject) => {
 		axios.get(api + url).then(res => {
 			let data = res.data
