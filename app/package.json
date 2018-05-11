@@ -2,7 +2,7 @@
   "name": "reactjs",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./reactjs",
+  "homepage": "./",
   "dependencies": {
     "antd": "^3.0.0",
     "axios": "^0.16.2",

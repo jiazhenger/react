@@ -1,7 +1,7 @@
 ﻿/* ====================================== App 入口文件  ====================================== */
 import React from 'react';
 import connect from '@redux/connect';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 // ===================================================================== router
 import AppRouter from './router';
 import LoadingComponent from './component/loading.component';
@@ -12,11 +12,11 @@ class App extends React.Component{
 	}
 	render(){
 		return [
-			<BrowserRouter key="BrowserRouter">
+			<HashRouter key="HashRouter">
 				{/* <Route component={AppRouter} {...this.props} exact /> */}
 				{/* <AppRouter {...this.props} /> AppRouter 必须有  withRouter 包裹*/}
 				<AppRouter { ...this.props } />
-			</BrowserRouter>,
+			</HashRouter>,
 			<div key="loading">
 				{ this.props.state.prompt.bool ? 
 					<LoadingComponent />
